@@ -1,6 +1,5 @@
 import { Component, signal, computed, input, output, Output, EventEmitter } from '@angular/core';
-
-type UserType = { id: string; avatar: string; name: string };
+import { UserType } from './user.model';
 
 @Component({
   imports: [],

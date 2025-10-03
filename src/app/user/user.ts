@@ -9,9 +9,10 @@ import {
   EventEmitter,
 } from '@angular/core';
 import { UserType } from './user.model';
+import { Card } from '../shared/card/card';
 
 @Component({
-  imports: [],
+  imports: [Card],
   selector: 'app-user',
   templateUrl: './user.html',
   styleUrl: './user.scss',

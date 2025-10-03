@@ -1,4 +1,13 @@
-import { Component, signal, computed, input, output, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  signal,
+  computed,
+  input,
+  Input,
+  output,
+  Output,
+  EventEmitter,
+} from '@angular/core';
 import { UserType } from './user.model';
 
 @Component({
@@ -13,6 +22,7 @@ export class User {
   // avatar = input.required<string>();
   // name = input.required<string>();
   user = input.required<UserType>();
+  @Input({ required: true }) isSelected!: boolean;
 
   // @Output() select = new EventEmitter<string>();
   select = output<string>();
